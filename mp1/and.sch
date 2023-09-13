@@ -29,10 +29,10 @@ N 155 -50 155 -40 {
 lab=VP}
 N 155 -60 155 -50 {
 lab=VP}
-C {/home/madvlsi/madvlsi/mp1/cmos_inverter/inverter.sym} 230 0 0 0 {name=X1}
 C {devices/ipin.sym} 85 -10 0 0 {name=p1 lab=A}
 C {devices/ipin.sym} 85 10 0 0 {name=p2 lab=B}
 C {devices/iopin.sym} 155 -60 3 0 {name=p3 lab=VP}
 C {devices/iopin.sym} 155 55 1 0 {name=p4 lab=VN}
 C {devices/opin.sym} 340 0 0 0 {name=p5 lab=Y}
-C {/home/madvlsi/madvlsi/mp1/cmos_inverter/nand.sym} 90 0 0 0 {}
+C {/home/madvlsi/madvlsi/mp1/nand.sym} 90 0 0 0 {name=X1}
+C {/home/madvlsi/madvlsi/mp1/inverter.sym} 230 0 0 0 {name=X2}
