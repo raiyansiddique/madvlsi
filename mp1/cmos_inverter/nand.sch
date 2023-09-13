@@ -27,6 +27,19 @@ N 170 -120 170 -80 {
 lab=VP}
 N 110 -140 110 -120 {
 lab=VP}
+N -0 -50 10 -50 {
+lab=A}
+N -10 -50 -0 -50 {
+lab=A}
+N 0 -50 0 40 {
+lab=A}
+N 70 110 80 110 {
+lab=B}
+N 0 40 80 40 {
+lab=A}
+N 60 110 70 110 {}
+N 70 -50 70 110 {}
+N 70 -50 140 -50 {}
 C {madvlsi/pmos4.sym} 40 -50 0 0 {name=M1
 L=0.15
 W=1
@@ -83,10 +96,8 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/ipin.sym} 10 -50 1 0 {name=p1 lab=A}
-C {devices/ipin.sym} 140 -50 1 0 {name=p2 lab=B}
+C {devices/ipin.sym} -10 -50 1 0 {name=p1 lab=A}
 C {devices/opin.sym} 190 -20 0 0 {name=p3 lab=Y}
 C {devices/iopin.sym} 110 -140 3 0 {name=p4 lab=VP}
 C {devices/iopin.sym} 110 140 1 0 {name=p5 lab=VN}
-C {devices/ipin.sym} 80 40 0 0 {name=p6 lab=A}
-C {devices/ipin.sym} 80 110 0 0 {name=p7 lab=B}
+C {devices/ipin.sym} 60 110 0 0 {name=p7 lab=B}
