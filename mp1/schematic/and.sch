@@ -34,5 +34,5 @@ C {devices/ipin.sym} 85 10 0 0 {name=p2 lab=B}
 C {devices/iopin.sym} 155 -60 3 0 {name=p3 lab=VP}
 C {devices/iopin.sym} 155 55 1 0 {name=p4 lab=VN}
 C {devices/opin.sym} 340 0 0 0 {name=p5 lab=Y}
-C {/home/madvlsi/madvlsi/mp1/nand.sym} 90 0 0 0 {name=X1}
-C {/home/madvlsi/madvlsi/mp1/inverter.sym} 230 0 0 0 {name=X2}
+C {/home/madvlsi/madvlsi/mp1/schematic/nand.sym} 90 0 0 0 {name=X1}
+C {/home/madvlsi/madvlsi/mp1/schematic/inverter.sym} 230 0 0 0 {name=X2}

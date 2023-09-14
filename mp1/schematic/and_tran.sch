@@ -27,7 +27,7 @@ C {madvlsi/vsource.sym} -160 -210 0 0 {name=Vin2
 value=value="pulse(0 1.8 5ns 1ns 1ns 100ns 200ns)"}
 C {madvlsi/gnd.sym} -160 -180 0 0 {name=l7 lab=GND}
 C {madvlsi/vsource.sym} 45 -220 0 0 {name=Vin1
-value="pulse(0 1.8 0 1ns 1ns 50ns 100ns)"}
+value="pulse(0 1.8 0 1ns 1ns 100ns 200ns)"}
 C {madvlsi/gnd.sym} 45 -190 0 0 {name=l9 lab=GND}
 C {devices/lab_pin.sym} 45 -250 1 0 {name=p4 sig_type=std_logic lab=Vin_A}
 C {devices/lab_pin.sym} -160 -240 1 0 {name=p5 sig_type=std_logic lab=Vin_B}
