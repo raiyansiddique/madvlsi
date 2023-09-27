@@ -1,0 +1,366 @@
+timestamp 1695853972
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use inverter inverter_0 1 0 -144 0 1 1410
+use csrl_latch csrl_latch_3 1 0 3290 0 1 1130
+use csrl_latch csrl_latch_2 1 0 2300 0 1 1130
+use csrl_latch csrl_latch_1 1 0 1310 0 1 1130
+use csrl_latch csrl_latch_0 1 0 320 0 1 1130
+node "m1_n24_1378#" 0 130.241 -24 1378 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19536 620 0 0 0 0 0 0 0 0 0 0
+node "m1_n10_1820#" 0 94.9617 -10 1820 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10440 476 0 0 0 0 0 0 0 0 0 0
+node "a_n16_1742#" 86 27.6825 -16 1742 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 576 100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n144_2040#" 376 163.058 -144 2040 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7020 528 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_n24_1378#" "a_n144_2040#" 0.117159
+cap "a_n16_1742#" "a_n144_2040#" 1.46286
+cap "m1_n24_1378#" "a_n16_1742#" 1.03531
+cap "m1_n10_1820#" "a_n144_2040#" 1.18474
+cap "m1_n10_1820#" "m1_n24_1378#" 9.45185
+cap "m1_n10_1820#" "a_n16_1742#" 1.05678
+cap "inverter_0/VN" "csrl_latch_1/a_n230_n480#" 9.3578
+cap "csrl_latch_0/a_0_n1070#" "csrl_latch_1/a_n230_n480#" 0.124133
+cap "csrl_latch_0/a_n100_n1040#" "inverter_0/A" 0.064577
+cap "csrl_latch_1/a_n100_n1040#" "csrl_latch_0/a_0_n1070#" 0.0154139
+cap "csrl_latch_1/a_n100_n1040#" "csrl_latch_1/D" 0.447141
+cap "csrl_latch_1/a_n230_n480#" "csrl_latch_1/D" 5.61491
+cap "csrl_latch_1/D_bar" "inverter_0/VN" 56.4878
+cap "csrl_latch_2/D" "csrl_latch_2/CLK" 1.64612
+cap "csrl_latch_2/D_bar" "csrl_latch_1/D_bar" 0.659705
+cap "csrl_latch_0/a_0_n1070#" "csrl_latch_1/a_0_n1070#" 0.390659
+cap "csrl_latch_1/a_0_n1070#" "csrl_latch_1/D" 0.509227
+cap "inverter_0/VN" "csrl_latch_2/CLK" 4.60186
+cap "csrl_latch_1/a_n100_n1040#" "csrl_latch_1/D_bar" 0.345031
+cap "csrl_latch_1/D_bar" "csrl_latch_1/a_n230_n480#" 114.57
+cap "csrl_latch_2/CLK" "csrl_latch_1/D" 0.190476
+cap "csrl_latch_0/a_n230_n480#" "inverter_0/A" 0.289202
+cap "csrl_latch_1/D_bar" "csrl_latch_1/a_0_n1070#" 1.21212
+cap "csrl_latch_0/a_0_n1070#" "inverter_0/VP" 1.77636e-15
+cap "inverter_0/VP" "csrl_latch_1/D" -1.11022e-16
+cap "csrl_latch_0/a_n230_n480#" "inverter_0/VN" 0.921622
+cap "csrl_latch_1/a_n100_n1040#" "csrl_latch_2/CLK" 0.525506
+cap "csrl_latch_2/CLK" "csrl_latch_1/a_n230_n480#" 0.793835
+cap "inverter_0/VN" "inverter_0/A" 1.05476
+cap "csrl_latch_2/D" "csrl_latch_1/D" 2.07839
+cap "csrl_latch_0/a_0_n1070#" "inverter_0/A" 0.0169853
+cap "inverter_0/A" "csrl_latch_1/D" 0.235294
+cap "csrl_latch_2/CLK" "csrl_latch_1/a_0_n1070#" 0.150775
+cap "csrl_latch_1/a_n100_n1040#" "csrl_latch_0/a_n230_n480#" 0.00828214
+cap "csrl_latch_0/a_n230_n480#" "csrl_latch_1/a_n230_n480#" 1.27451
+cap "csrl_latch_0/a_0_n1070#" "inverter_0/VN" 0.296753
+cap "inverter_0/VN" "csrl_latch_1/D" 5.06683
+cap "csrl_latch_1/D_bar" "csrl_latch_2/D" 0.0267845
+cap "csrl_latch_2/a_0_n1070#" "csrl_latch_3/a_n230_n480#" 0.0177855
+cap "csrl_latch_0/a_0_n1070#" "csrl_latch_1/a_n230_n480#" 0.0924965
+cap "csrl_latch_2/a_n230_n480#" "csrl_latch_2/D" 11.3457
+cap "csrl_latch_0/a_n230_n480#" "csrl_latch_3/CLK" 0.0154264
+cap "csrl_latch_2/a_0_n1070#" "csrl_latch_3/CLK" 0.150775
+cap "csrl_latch_2/a_n100_n1040#" "csrl_latch_1/a_n230_n480#" 0.00828214
+cap "inverter_0/VN" "csrl_latch_3/CLK" 5.57206
+cap "csrl_latch_1/D_bar" "csrl_latch_2/D" 0.550556
+cap "csrl_latch_2/a_0_n1070#" "inverter_0/VN" 0.907762
+cap "csrl_latch_0/a_0_n1070#" "csrl_latch_1/a_0_n1070#" 0.390659
+cap "csrl_latch_2/a_n230_n480#" "csrl_latch_1/a_n230_n480#" 2.53717
+cap "csrl_latch_3/D" "csrl_latch_2/D" 2.07839
+cap "inverter_0/VP" "csrl_latch_2/D" -1.11022e-16
+cap "csrl_latch_2/a_n100_n1040#" "csrl_latch_2/D_bar" 0.345031
+cap "csrl_latch_2/a_n230_n480#" "csrl_latch_3/a_n100_n1040#" 0.00828214
+cap "csrl_latch_1/D" "csrl_latch_2/D" 2.02768
+cap "csrl_latch_2/a_n100_n1040#" "csrl_latch_1/a_0_n1070#" 0.0154139
+cap "csrl_latch_2/a_n230_n480#" "csrl_latch_2/D_bar" 229.327
+cap "csrl_latch_2/D" "csrl_latch_3/CLK" 2.03548
+cap "csrl_latch_1/D_bar" "csrl_latch_1/a_n230_n480#" 114.757
+cap "csrl_latch_0/a_0_n1070#" "csrl_latch_3/CLK" 0.0104453
+cap "csrl_latch_2/a_n230_n480#" "csrl_latch_1/a_0_n1070#" 0.216629
+cap "inverter_0/VP" "csrl_latch_1/a_n230_n480#" -4.44089e-16
+cap "csrl_latch_2/a_0_n1070#" "csrl_latch_2/D" 0.538631
+cap "csrl_latch_2/a_n230_n480#" "csrl_latch_3/a_n230_n480#" 1.27451
+cap "csrl_latch_1/D" "csrl_latch_1/a_n230_n480#" 5.73084
+cap "inverter_0/VN" "csrl_latch_2/D" 6.79987
+cap "csrl_latch_2/a_n230_n480#" "inverter_0/VP" 2.22045e-16
+cap "csrl_latch_2/a_n100_n1040#" "csrl_latch_3/CLK" 0.525506
+cap "csrl_latch_3/D" "csrl_latch_2/D_bar" 0.0267845
+cap "csrl_latch_1/D_bar" "csrl_latch_2/D_bar" 0.659705
+cap "csrl_latch_3/CLK" "csrl_latch_1/a_n230_n480#" 0.0154264
+cap "csrl_latch_1/D_bar" "csrl_latch_1/a_0_n1070#" 1.27129
+cap "csrl_latch_3/CLK" "csrl_latch_3/a_n100_n1040#" 0.00828214
+cap "csrl_latch_2/a_n230_n480#" "csrl_latch_3/CLK" 0.793835
+cap "inverter_0/VP" "csrl_latch_1/a_0_n1070#" 8.88178e-16
+cap "csrl_latch_2/a_0_n1070#" "csrl_latch_1/a_n230_n480#" 0.0118957
+cap "csrl_latch_1/D" "csrl_latch_1/a_0_n1070#" 0.36792
+cap "csrl_latch_0/a_n230_n480#" "csrl_latch_1/a_n230_n480#" 1.26266
+cap "inverter_0/VN" "csrl_latch_1/a_n230_n480#" 63.6459
+cap "csrl_latch_2/D_bar" "csrl_latch_3/CLK" 0.0764333
+cap "csrl_latch_2/D_bar" "csrl_latch_3/D_bar" 0.659705
+cap "csrl_latch_2/a_n230_n480#" "csrl_latch_2/a_0_n1070#" 7.10543e-15
+cap "csrl_latch_2/a_n230_n480#" "inverter_0/VN" 73.0037
+cap "csrl_latch_1/a_0_n1070#" "csrl_latch_3/CLK" 0.0104453
+cap "csrl_latch_2/a_0_n1070#" "csrl_latch_2/D_bar" 2.42424
+cap "csrl_latch_1/D_bar" "csrl_latch_3/CLK" 0.110071
+cap "csrl_latch_3/D" "csrl_latch_3/CLK" 1.64612
+cap "csrl_latch_0/a_0_n1070#" "csrl_latch_2/D" 0.158754
+cap "inverter_0/VN" "csrl_latch_2/D_bar" 56.667
+cap "csrl_latch_3/CLK" "csrl_latch_3/a_n230_n480#" 0.011857
+cap "csrl_latch_2/a_0_n1070#" "csrl_latch_3/a_0_n1070#" 0.25
+cap "csrl_latch_0/a_n230_n480#" "csrl_latch_1/a_0_n1070#" 0.0118957
+cap "csrl_latch_2/a_0_n1070#" "csrl_latch_1/a_0_n1070#" 0.640659
+cap "inverter_0/VN" "csrl_latch_1/a_0_n1070#" 1.4123
+cap "csrl_latch_1/D" "csrl_latch_3/CLK" 0.247193
+cap "csrl_latch_2/a_n100_n1040#" "csrl_latch_2/D" 0.447141
+cap "csrl_latch_3/D_bar" "csrl_latch_2/D_bar" 0.659705
+cap "csrl_latch_3/D" "csrl_latch_1/a_0_n1070#" 0.158754
+cap "csrl_latch_3/a_n230_n480#" "csrl_latch_2/a_0_n1070#" 0.198844
+cap "csrl_latch_3/a_n230_n480#" "csrl_latch_2/a_n230_n480#" 1.26266
+cap "csrl_latch_3/a_n100_n1040#" "csrl_latch_3/D" 0.447141
+cap "csrl_latch_3/a_0_n1070#" "csrl_latch_3/D" 0.877146
+cap "csrl_latch_3/Q" "csrl_latch_3/D" 4.10607
+cap "csrl_latch_2/D" "csrl_latch_2/a_0_n1070#" 0.338515
+cap "csrl_latch_3/D_bar" "csrl_latch_3/a_n230_n480#" 229.327
+cap "csrl_latch_1/a_0_n1070#" "csrl_latch_2/a_0_n1070#" 0.140659
+cap "csrl_latch_3/VN" "csrl_latch_3/a_n230_n480#" 72.8477
+cap "csrl_latch_3/a_n100_n1040#" "csrl_latch_2/a_0_n1070#" 0.0154139
+cap "csrl_latch_3/VN" "csrl_latch_3/D" 6.79987
+cap "csrl_latch_3/Q_bar" "csrl_latch_3/D_bar" 1.31941
+cap "csrl_latch_3/a_0_n1070#" "csrl_latch_2/a_0_n1070#" 0.531319
+cap "csrl_latch_3/Q" "csrl_latch_2/a_0_n1070#" 0.158754
+cap "csrl_latch_3/CLK" "csrl_latch_2/D_bar" 0.0336373
+cap "csrl_latch_3/a_0_n1070#" "csrl_latch_2/a_n230_n480#" 0.0118957
+cap "csrl_latch_3/VN" "csrl_latch_3/Q_bar" 0.179226
+cap "csrl_latch_3/a_n100_n1040#" "csrl_latch_3/D_bar" 0.345031
+cap "csrl_latch_3/a_0_n1070#" "csrl_latch_3/D_bar" 2.48341
+cap "csrl_latch_3/Q" "csrl_latch_3/D_bar" 0.577341
+cap "csrl_latch_3/VN" "csrl_latch_2/a_0_n1070#" 0.504541
+cap "csrl_latch_3/CLK" "csrl_latch_3/a_n230_n480#" 0.781978
+cap "csrl_latch_3/D" "csrl_latch_3/CLK" 2.04625
+cap "csrl_latch_3/VN" "csrl_latch_3/a_0_n1070#" 1.11555
+cap "csrl_latch_3/VN" "csrl_latch_3/Q" 1.7715
+cap "csrl_latch_3/VN" "csrl_latch_3/D_bar" 56.667
+cap "csrl_latch_2/D" "csrl_latch_3/CLK" 0.0107668
+cap "csrl_latch_3/CLK" "csrl_latch_2/a_0_n1070#" 0.0104453
+cap "csrl_latch_3/D" "csrl_latch_2/D_bar" 0.550556
+cap "csrl_latch_3/a_n100_n1040#" "csrl_latch_3/CLK" 0.517223
+cap "csrl_latch_3/CLK" "csrl_latch_2/a_n230_n480#" 0.0154264
+cap "csrl_latch_3/a_0_n1070#" "csrl_latch_3/CLK" 0.150775
+cap "csrl_latch_3/Q" "csrl_latch_3/CLK" 3.2547
+cap "csrl_latch_3/CLK" "csrl_latch_3/D_bar" 0.110071
+cap "csrl_latch_3/D" "csrl_latch_3/a_n230_n480#" 11.3457
+cap "csrl_latch_2/D_bar" "csrl_latch_2/a_0_n1070#" 0.0591671
+cap "csrl_latch_3/VN" "csrl_latch_3/CLK" 5.21008
+cap "csrl_latch_2/D" "csrl_latch_3/D" 2.02768
+cap "csrl_latch_2/CLK" "inverter_0/Y" 12.5063
+cap "csrl_latch_2/CLK" "csrl_latch_2/D" 1.71582
+cap "csrl_latch_1/D_bar" "csrl_latch_1/D" 0.0201876
+cap "inverter_0/VN" "csrl_latch_0/a_0_n1070#" 0.0965101
+cap "inverter_0/VN" "inverter_0/Y" 10.0153
+cap "inverter_0/Y" "inverter_0/A" 10.895
+cap "inverter_0/A" "csrl_latch_0/a_0_n1070#" 0.0492932
+cap "csrl_latch_2/D" "inverter_0/VN" 0.0145493
+cap "csrl_latch_0/a_0_n1070#" "inverter_0/VP" -3.41061e-13
+cap "csrl_latch_1/a_n230_n480#" "csrl_latch_2/CLK" 1.4614
+cap "csrl_latch_1/D" "csrl_latch_0/a_n230_n480#" -1.77636e-15
+cap "inverter_0/Y" "inverter_0/VP" 20.4864
+cap "csrl_latch_1/a_n230_n480#" "inverter_0/VN" 0.0184169
+cap "csrl_latch_2/CLK" "inverter_0/VN" 9.48059
+cap "csrl_latch_2/CLK" "inverter_0/A" 6.97521
+cap "inverter_0/VN" "inverter_0/A" 0.626787
+cap "csrl_latch_2/CLK" "inverter_0/VP" 4.05857
+cap "inverter_0/VN" "inverter_0/VP" -7.0063
+cap "inverter_0/A" "inverter_0/VP" 43.0661
+cap "csrl_latch_1/a_n230_n480#" "csrl_latch_0/a_360_700#" 2.06757
+cap "csrl_latch_0/a_n100_n1040#" "inverter_0/A" 0.0322885
+cap "csrl_latch_1/D" "inverter_0/Y" 0.518297
+cap "csrl_latch_0/a_n100_n1040#" "inverter_0/VP" -5.55112e-17
+cap "csrl_latch_1/a_0_n1070#" "csrl_latch_2/CLK" 0.111685
+cap "csrl_latch_1/a_n100_n1040#" "csrl_latch_2/CLK" 0.335237
+cap "csrl_latch_1/D" "csrl_latch_2/D" 3.90963
+cap "csrl_latch_1/D_bar" "csrl_latch_2/D" 0.00487122
+cap "inverter_0/Y" "csrl_latch_0/a_n230_n480#" 113.811
+cap "csrl_latch_1/D_bar" "csrl_latch_2/D_bar" 0.0833333
+cap "csrl_latch_1/a_0_n1070#" "inverter_0/VN" 0.00961682
+cap "csrl_latch_0/a_360_700#" "inverter_0/VP" 0.644825
+cap "csrl_latch_1/D_bar" "csrl_latch_2/CLK" 3.96821
+cap "csrl_latch_1/D" "csrl_latch_2/CLK" 1.49538
+cap "csrl_latch_1/a_n230_n480#" "csrl_latch_1/D" 11.7676
+cap "csrl_latch_1/a_n230_n480#" "csrl_latch_1/D_bar" 122.35
+cap "csrl_latch_1/D_bar" "inverter_0/VN" 7.96891
+cap "csrl_latch_1/D" "inverter_0/VN" 0.940637
+cap "csrl_latch_1/D" "inverter_0/A" 0.705882
+cap "csrl_latch_2/CLK" "csrl_latch_0/a_n230_n480#" -1.42109e-14
+cap "csrl_latch_1/a_n230_n480#" "csrl_latch_0/a_n230_n480#" 0.0892618
+cap "inverter_0/VN" "csrl_latch_0/a_n230_n480#" 10.4256
+cap "csrl_latch_1/a_360_700#" "csrl_latch_1/D_bar" 0.00394247
+cap "csrl_latch_1/D" "inverter_0/VP" 17.8477
+cap "csrl_latch_1/D_bar" "inverter_0/VP" 46.4822
+cap "inverter_0/A" "csrl_latch_0/a_n230_n480#" 4.8292
+cap "csrl_latch_1/D" "csrl_latch_0/a_360_700#" -2.84217e-14
+cap "csrl_latch_0/a_n230_n480#" "inverter_0/VP" 11.7482
+cap "csrl_latch_1/a_0_n1070#" "csrl_latch_1/D" 0.341534
+cap "csrl_latch_1/a_0_n1070#" "csrl_latch_1/D_bar" 0.0069803
+cap "csrl_latch_0/a_360_700#" "csrl_latch_1/a_n230_n480#" 2.2256
+cap "csrl_latch_2/D_bar" "inverter_0/VN" 7.94435
+cap "csrl_latch_2/D_bar" "csrl_latch_3/CLK" 5.88571
+cap "csrl_latch_3/CLK" "inverter_0/VN" 3.6738
+cap "csrl_latch_2/a_n100_n1040#" "csrl_latch_3/CLK" 0.335237
+cap "csrl_latch_2/D" "csrl_latch_2/a_0_n1070#" 0.341534
+cap "csrl_latch_0/a_n230_n480#" "csrl_latch_1/a_n230_n480#" 0.0833333
+cap "csrl_latch_2/D" "csrl_latch_1/D_bar" 0.773437
+cap "csrl_latch_2/D" "csrl_latch_1/D" 3.90963
+cap "inverter_0/VN" "csrl_latch_1/a_n230_n480#" 4.71048
+cap "csrl_latch_1/D_bar" "csrl_latch_1/D" -1.81145
+cap "csrl_latch_3/CLK" "csrl_latch_1/a_n230_n480#" 1.66252
+cap "csrl_latch_2/D_bar" "csrl_latch_3/D_bar" 0.0833333
+cap "csrl_latch_2/D_bar" "csrl_latch_2/a_n230_n480#" 242.582
+cap "csrl_latch_1/a_360_700#" "csrl_latch_3/CLK" 0.0451215
+cap "csrl_latch_2/a_n230_n480#" "inverter_0/VN" 4.71048
+cap "csrl_latch_2/a_n230_n480#" "csrl_latch_3/CLK" 3.12392
+cap "csrl_latch_3/D" "csrl_latch_2/D_bar" 0.00487122
+cap "inverter_0/VP" "csrl_latch_2/D_bar" 40.5225
+cap "inverter_0/VP" "inverter_0/VN" 2.22045e-16
+cap "inverter_0/VP" "csrl_latch_2/a_n100_n1040#" -5.55112e-17
+cap "csrl_latch_2/D" "csrl_latch_0/a_360_700#" 0.26197
+cap "csrl_latch_2/a_n230_n480#" "csrl_latch_1/a_n230_n480#" 0.172595
+cap "inverter_0/VP" "csrl_latch_3/CLK" 13.2593
+cap "csrl_latch_3/D" "csrl_latch_3/CLK" 1.71582
+cap "csrl_latch_1/a_n100_n1040#" "inverter_0/VP" -5.55112e-17
+cap "csrl_latch_1/a_360_700#" "csrl_latch_2/a_n230_n480#" 4.29317
+cap "csrl_latch_0/a_360_700#" "csrl_latch_1/D" 0.0475689
+cap "inverter_0/VP" "csrl_latch_1/a_n230_n480#" 50.7613
+cap "csrl_latch_2/D" "csrl_latch_2/D_bar" -1.79127
+cap "inverter_0/VP" "csrl_latch_1/a_360_700#" 0.644825
+cap "csrl_latch_2/D_bar" "csrl_latch_2/a_0_n1070#" 0.0069803
+cap "csrl_latch_2/D" "inverter_0/VN" 0.695201
+cap "csrl_latch_1/D_bar" "csrl_latch_2/D_bar" 0.0833333
+cap "inverter_0/VP" "csrl_latch_2/a_n230_n480#" 50.7613
+cap "csrl_latch_2/a_0_n1070#" "csrl_latch_3/CLK" 0.111685
+cap "csrl_latch_2/D" "csrl_latch_3/CLK" 4.70658
+cap "csrl_latch_0/a_0_n1070#" "csrl_latch_1/a_n230_n480#" 0.00522263
+cap "csrl_latch_1/D" "inverter_0/VN" 2.77556e-17
+cap "csrl_latch_1/D_bar" "csrl_latch_3/CLK" 1.9175
+cap "csrl_latch_1/D" "csrl_latch_3/CLK" 1.49538
+cap "csrl_latch_2/D_bar" "csrl_latch_2/a_360_700#" 0.00394247
+cap "csrl_latch_1/a_0_n1070#" "csrl_latch_2/a_n230_n480#" 0.00522263
+cap "csrl_latch_1/a_360_700#" "csrl_latch_2/D" 0.0475689
+cap "csrl_latch_1/D_bar" "csrl_latch_1/a_n230_n480#" 120.232
+cap "csrl_latch_1/D" "csrl_latch_1/a_n230_n480#" 13.2669
+cap "inverter_0/VP" "csrl_latch_1/a_0_n1070#" -2.27374e-13
+cap "csrl_latch_2/D" "csrl_latch_2/a_n230_n480#" 25.0345
+cap "csrl_latch_0/a_360_700#" "csrl_latch_3/CLK" 0.0451215
+cap "csrl_latch_3/D" "csrl_latch_2/D" 3.90963
+cap "inverter_0/VP" "csrl_latch_2/D" 4.29698
+cap "csrl_latch_2/a_n230_n480#" "csrl_latch_3/a_n230_n480#" 0.0892618
+cap "inverter_0/VP" "csrl_latch_1/D_bar" -6.03144
+cap "inverter_0/VP" "csrl_latch_1/D" -18.0371
+cap "csrl_latch_3/a_n230_n480#" "csrl_latch_3/VN" 4.71048
+cap "csrl_latch_3/D_bar" "csrl_latch_3/Q_bar" 0.166667
+cap "csrl_latch_3/VN" "csrl_latch_3/CLK" 3.57595
+cap "csrl_latch_3/D" "csrl_latch_3/VN" 0.695201
+cap "csrl_latch_3/a_n230_n480#" "csrl_latch_3/VP" 50.658
+cap "csrl_latch_3/D_bar" "csrl_latch_3/VN" 7.94435
+cap "csrl_latch_3/VP" "csrl_latch_3/CLK" 8.12329
+cap "csrl_latch_3/VP" "csrl_latch_2/a_360_700#" 0.644825
+cap "csrl_latch_1/a_360_700#" "csrl_latch_3/D" 0.26197
+cap "csrl_latch_3/D" "csrl_latch_3/VP" 4.29698
+cap "csrl_latch_3/D_bar" "csrl_latch_3/a_360_700#" 0.00394247
+cap "csrl_latch_3/D_bar" "csrl_latch_3/VP" 40.5225
+cap "csrl_latch_3/a_0_n1070#" "csrl_latch_3/CLK" 0.111685
+cap "csrl_latch_3/VP" "csrl_latch_3/Q_bar" 0.0716749
+cap "csrl_latch_3/D" "csrl_latch_3/a_0_n1070#" 0.341534
+cap "csrl_latch_3/Q" "csrl_latch_3/CLK" 3.43164
+cap "csrl_latch_3/D_bar" "csrl_latch_3/a_0_n1070#" 0.0069803
+cap "csrl_latch_3/Q" "csrl_latch_3/D" 7.81926
+cap "csrl_latch_3/VP" "csrl_latch_3/VN" -8.88178e-16
+cap "csrl_latch_3/Q" "csrl_latch_2/a_360_700#" 0.26197
+cap "csrl_latch_3/Q" "csrl_latch_3/D_bar" 0.778309
+cap "csrl_latch_3/Q" "csrl_latch_3/VN" 0.695201
+cap "csrl_latch_3/Q" "csrl_latch_3/VP" 7.64638
+cap "csrl_latch_3/a_n230_n480#" "csrl_latch_3/CLK" 3.12392
+cap "csrl_latch_3/a_n230_n480#" "csrl_latch_2/a_360_700#" 4.29317
+cap "csrl_latch_3/D" "csrl_latch_3/CLK" 4.70658
+cap "csrl_latch_3/D" "csrl_latch_3/a_n230_n480#" 25.0345
+cap "csrl_latch_2/a_0_n1070#" "csrl_latch_3/a_n230_n480#" 0.00522263
+cap "csrl_latch_2/a_360_700#" "csrl_latch_3/CLK" 0.0451215
+cap "csrl_latch_3/D" "csrl_latch_2/D_bar" 0.773437
+cap "csrl_latch_2/D" "csrl_latch_3/D" 3.90963
+cap "csrl_latch_3/D" "csrl_latch_2/a_360_700#" 0.0475689
+cap "csrl_latch_3/D_bar" "csrl_latch_3/a_n230_n480#" 242.582
+cap "csrl_latch_3/D_bar" "csrl_latch_3/CLK" 5.88571
+cap "csrl_latch_3/a_n100_n1040#" "csrl_latch_3/CLK" 0.335237
+cap "csrl_latch_2/D_bar" "csrl_latch_3/D_bar" 0.0833333
+cap "csrl_latch_3/D" "csrl_latch_3/D_bar" -1.79127
+cap "csrl_latch_2/a_n230_n480#" "csrl_latch_3/a_n230_n480#" 0.0833333
+cap "csrl_latch_1/a_0_n1070#" "csrl_latch_1/D_bar" 0.0761905
+cap "csrl_latch_0/a_0_n1070#" "csrl_latch_1/a_0_n1070#" 1.02294
+cap "csrl_latch_1/D_bar" "inverter_0/VP" 1.3601
+cap "csrl_latch_1/a_n230_n480#" "inverter_0/VP" 5.02642
+cap "csrl_latch_1/D_bar" "csrl_latch_1/a_n230_n480#" 0.412993
+cap "csrl_latch_0/a_n230_n480#" "inverter_0/VP" 0.0523872
+cap "csrl_latch_0/a_n230_n480#" "csrl_latch_1/a_n230_n480#" 0.391104
+cap "csrl_latch_0/a_0_n1070#" "inverter_0/VP" 1.80012
+cap "csrl_latch_0/a_0_n1070#" "csrl_latch_1/a_n230_n480#" 0.0771799
+cap "csrl_latch_1/D" "inverter_0/VP" 2.17992
+cap "csrl_latch_1/D" "csrl_latch_1/a_n230_n480#" 5.35714
+cap "inverter_0/VP" "csrl_latch_1/a_n230_n480#" 35.7078
+cap "csrl_latch_0/a_n230_n480#" "csrl_latch_1/a_n230_n480#" 0.465344
+cap "csrl_latch_2/a_0_n1070#" "csrl_latch_2/D_bar" 0.0761905
+cap "csrl_latch_2/a_n230_n480#" "csrl_latch_1/a_0_n1070#" 0.105046
+cap "csrl_latch_2/a_n230_n480#" "csrl_latch_2/D_bar" 0.732993
+cap "csrl_latch_1/D" "csrl_latch_1/a_n230_n480#" 5.3877
+cap "csrl_latch_1/a_n230_n480#" "csrl_latch_1/D_bar" 0.32
+cap "csrl_latch_2/a_0_n1070#" "csrl_latch_3/a_n230_n480#" 0.0106713
+cap "csrl_latch_2/a_0_n1070#" "csrl_latch_2/D" 0.289031
+cap "csrl_latch_2/a_0_n1070#" "csrl_latch_3/a_0_n1070#" 0.4
+cap "csrl_latch_2/a_n230_n480#" "csrl_latch_3/a_n230_n480#" 0.391104
+cap "csrl_latch_2/a_n230_n480#" "csrl_latch_2/D" 10.7448
+cap "inverter_0/VP" "csrl_latch_1/a_0_n1070#" 6.76274
+cap "csrl_latch_0/a_0_n1070#" "csrl_latch_1/a_n230_n480#" 0.0278663
+cap "inverter_0/VP" "csrl_latch_2/D_bar" 1.3601
+cap "csrl_latch_2/a_0_n1070#" "inverter_0/VP" 4.32379
+cap "csrl_latch_1/a_0_n1070#" "csrl_latch_1/D_bar" 0.0761905
+cap "csrl_latch_1/D" "csrl_latch_1/a_0_n1070#" 0.350215
+cap "csrl_latch_2/a_n230_n480#" "csrl_latch_1/a_n230_n480#" 0.856448
+cap "inverter_0/VP" "csrl_latch_3/a_n230_n480#" 0.112832
+cap "inverter_0/VP" "csrl_latch_2/D" 2.17992
+cap "csrl_latch_2/a_n230_n480#" "inverter_0/VP" 40.7342
+cap "csrl_latch_0/a_0_n1070#" "csrl_latch_1/a_0_n1070#" 1.02319
+cap "csrl_latch_2/a_0_n1070#" "csrl_latch_1/a_0_n1070#" 1.72964
+cap "csrl_latch_1/a_0_n1070#" "csrl_latch_2/a_0_n1070#" 0.316484
+cap "csrl_latch_3/VP" "csrl_latch_2/a_0_n1070#" 2.43895
+cap "csrl_latch_3/a_n230_n480#" "csrl_latch_3/VP" 40.569
+cap "csrl_latch_3/a_0_n1070#" "csrl_latch_3/VP" 4.96262
+cap "csrl_latch_2/D" "csrl_latch_2/a_0_n1070#" 0.0611836
+cap "csrl_latch_3/D_bar" "csrl_latch_3/VP" 1.3601
+cap "csrl_latch_3/a_0_n1070#" "csrl_latch_2/a_0_n1070#" 1.64613
+cap "csrl_latch_3/a_n230_n480#" "csrl_latch_2/a_0_n1070#" 0.0943749
+cap "csrl_latch_3/D" "csrl_latch_3/VP" 2.17992
+cap "csrl_latch_3/a_n230_n480#" "csrl_latch_3/D_bar" 0.732993
+cap "csrl_latch_3/a_0_n1070#" "csrl_latch_3/D_bar" 0.152381
+cap "csrl_latch_3/a_n230_n480#" "csrl_latch_2/a_n230_n480#" 0.465344
+cap "csrl_latch_3/D" "csrl_latch_3/a_0_n1070#" 0.350215
+cap "csrl_latch_3/D" "csrl_latch_3/a_n230_n480#" 10.7448
+cap "csrl_latch_2/D_bar" "csrl_latch_2/a_0_n1070#" 0.0761905
+merge "csrl_latch_3/VN" "csrl_latch_0/VN" -2157.12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -13728 -10312 0 0 0 0 0 0 0 0 0 0
+merge "csrl_latch_0/VN" "csrl_latch_1/VN"
+merge "csrl_latch_1/VN" "csrl_latch_2/VN"
+merge "csrl_latch_2/VN" "inverter_0/VN"
+merge "inverter_0/VN" "VSUBS"
+merge "VSUBS" "m1_n24_1378#"
+merge "csrl_latch_0/VP" "csrl_latch_3/VP" -2537.18 0 0 0 0 -243348 -9076 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -48120 -8908 0 0 0 0 0 0 0 0 0 0
+merge "csrl_latch_3/VP" "csrl_latch_1/VP"
+merge "csrl_latch_1/VP" "csrl_latch_2/VP"
+merge "csrl_latch_2/VP" "inverter_0/VP"
+merge "inverter_0/VP" "m1_n10_1820#"
+merge "csrl_latch_0/D" "inverter_0/A" -84.5875 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -300 -140 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter_0/A" "a_n144_2040#"
+merge "csrl_latch_1/Q" "csrl_latch_2/D" -130.081 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1800 -180 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "csrl_latch_0/CLK" "csrl_latch_3/CLK" -190.685 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -360 0 0 0 0 0 0 0 0 0 0
+merge "csrl_latch_3/CLK" "csrl_latch_1/CLK"
+merge "csrl_latch_1/CLK" "csrl_latch_2/CLK"
+merge "csrl_latch_0/D_bar" "inverter_0/Y" -148.845 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -276 -140 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter_0/Y" "a_n16_1742#"
+merge "csrl_latch_2/Q_bar" "csrl_latch_3/D_bar" -442.089 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1800 -180 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "csrl_latch_1/Q_bar" "csrl_latch_2/D_bar" -442.089 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1800 -180 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "csrl_latch_0/Q_bar" "csrl_latch_1/D_bar" -440.515 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1800 -180 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "csrl_latch_2/Q" "csrl_latch_3/D" -130.081 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1800 -180 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "csrl_latch_0/Q" "csrl_latch_1/D" -108.857 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1800 -180 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

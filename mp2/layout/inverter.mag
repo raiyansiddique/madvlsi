@@ -1,0 +1,108 @@
+magic
+tech sky130A
+timestamp 1695853385
+<< nwell >>
+rect -120 180 85 319
+<< nmos >>
+rect 0 0 15 100
+<< pmos >>
+rect 0 200 15 300
+<< ndiff >>
+rect -50 80 0 100
+rect -50 15 -40 80
+rect -20 15 0 80
+rect -50 0 0 15
+rect 15 82 65 100
+rect 15 17 30 82
+rect 50 17 65 82
+rect 15 0 65 17
+<< pdiff >>
+rect -50 280 0 300
+rect -50 215 -40 280
+rect -20 215 0 280
+rect -50 200 0 215
+rect 15 282 65 300
+rect 15 217 30 282
+rect 50 217 65 282
+rect 15 200 65 217
+<< ndiffc >>
+rect -40 15 -20 80
+rect 30 17 50 82
+<< pdiffc >>
+rect -40 215 -20 280
+rect 30 217 50 282
+<< psubdiff >>
+rect -100 80 -50 100
+rect -100 15 -85 80
+rect -60 15 -50 80
+rect -100 0 -50 15
+<< nsubdiff >>
+rect -100 280 -50 300
+rect -100 215 -85 280
+rect -60 215 -50 280
+rect -100 200 -50 215
+<< psubdiffcont >>
+rect -85 15 -60 80
+<< nsubdiffcont >>
+rect -85 215 -60 280
+<< poly >>
+rect 0 300 15 315
+rect 0 100 15 200
+rect 39 157 79 168
+rect 39 137 50 157
+rect 67 137 79 157
+rect 39 128 79 137
+rect 0 -15 15 0
+<< polycont >>
+rect 50 137 67 157
+<< locali >>
+rect -95 280 -5 295
+rect -95 215 -85 280
+rect -60 215 -40 280
+rect -20 215 -5 280
+rect -95 205 -5 215
+rect 20 282 60 295
+rect 20 217 30 282
+rect 50 217 60 282
+rect 20 205 60 217
+rect 39 168 60 205
+rect 39 157 79 168
+rect 39 137 50 157
+rect 67 137 79 157
+rect 39 128 79 137
+rect 39 95 60 128
+rect -95 80 -5 95
+rect -95 15 -85 80
+rect -60 15 -40 80
+rect -20 15 -5 80
+rect -95 5 -5 15
+rect 20 82 60 95
+rect 20 17 30 82
+rect 50 17 60 82
+rect 20 5 60 17
+<< viali >>
+rect -85 215 -60 280
+rect -40 215 -20 280
+rect -85 15 -60 80
+rect -40 15 -20 80
+<< metal1 >>
+rect -115 280 80 295
+rect -115 215 -85 280
+rect -60 215 -40 280
+rect -20 215 80 280
+rect -115 205 80 215
+rect -115 80 80 95
+rect -115 15 -85 80
+rect -60 15 -40 80
+rect -20 15 80 80
+rect -115 5 80 15
+<< labels >>
+rlabel metal1 -115 50 -115 50 7 VN
+port 1 w
+rlabel metal1 -115 250 -115 250 7 VP
+port 2 w
+rlabel poly 7 315 7 315 1 A
+port 3 n
+rlabel locali 79 148 79 148 3 Y
+port 4 e
+<< end >>

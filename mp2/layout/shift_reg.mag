@@ -1,0 +1,31 @@
+magic
+tech sky130A
+timestamp 1695853972
+<< poly >>
+rect -72 1055 10 1070
+rect -72 1020 -57 1055
+rect -8 871 8 880
+<< metal1 >>
+rect -5 910 24 1000
+rect -12 689 32 800
+use csrl_latch  csrl_latch_0
+timestamp 1695847200
+transform 1 0 160 0 1 565
+box -160 -565 370 1010
+use csrl_latch  csrl_latch_1
+timestamp 1695847200
+transform 1 0 655 0 1 565
+box -160 -565 370 1010
+use csrl_latch  csrl_latch_2
+timestamp 1695847200
+transform 1 0 1150 0 1 565
+box -160 -565 370 1010
+use csrl_latch  csrl_latch_3
+timestamp 1695847200
+transform 1 0 1645 0 1 565
+box -160 -565 370 1010
+use inverter  inverter_0
+timestamp 1695853385
+transform 1 0 -72 0 1 705
+box -120 -15 85 319
+<< end >>

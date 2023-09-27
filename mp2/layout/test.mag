@@ -1,8 +1,0 @@
-magic
-tech sky130A
-timestamp 1695791937
-use csrl_latch_final  csrl_latch_final_0
-timestamp 1695791791
-transform 1 0 155 0 1 557
-box -160 -565 370 1010
-<< end >>
