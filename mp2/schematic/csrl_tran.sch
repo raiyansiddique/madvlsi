@@ -5,7 +5,6 @@ K {}
 V {}
 S {}
 E {}
-C {/home/madvlsi/madvlsi/mp2/schematic/csrl_latch.sym} 30 0 0 0 {name=X1}
 C {madvlsi/vdd.sym} 70 -50 0 0 {name=l1 lab=VDD}
 C {madvlsi/gnd.sym} 70 60 0 0 {name=l2 lab=GND}
 C {madvlsi/vsource.sym} -190 -120 0 0 {name=Vdd
@@ -32,3 +31,4 @@ only_toplevel=false
 value=".option wnflag=1
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice ss"
 }
+C {/home/madvlsi/madvlsi/mp2/schematic/csrl_latch_final_inv.sym} 30 0 0 0 {name=X1}
