@@ -1,0 +1,78 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Subcircuit summary:
+Circuit 1: netlists/csrl_latch_final_xsche |Circuit 2: layout/csrl_latch_final.spice   
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (7)                |sky130_fd_pr__pfet_01v8 (7)                
+sky130_fd_pr__nfet_01v8 (7)                |sky130_fd_pr__nfet_01v8 (7)                
+Number of devices: 14                      |Number of devices: 14                      
+Number of nets: 13 **Mismatch**            |Number of nets: 11 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: netlists/csrl_latch_final_xsche |Circuit 2: layout/csrl_latch_final.spice   
+
+---------------------------------------------------------------------------------------
+Net: VP                                    |Net: a_n100_n1040#                         
+  sky130_fd_pr__pfet_01v8/(1|3) = 3        |  sky130_fd_pr__nfet_01v8/(1|3) = 3        
+                                           |                                           
+Net: net3                                  |Net: a_360_700#                            
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  sky130_fd_pr__pfet_01v8/(1|3) = 3        
+                                           |                                           
+Net: VN                                    |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |                                           
+                                           |                                           
+Net: net4                                  |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 3        |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching net)                          |Net: VP                                    
+                                           |  sky130_fd_pr__pfet_01v8/4 = 7            
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 3        
+                                           |                                           
+(no matching net)                          |Net: VN                                    
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 3        
+                                           |  sky130_fd_pr__nfet_01v8/4 = 7            
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: GND                                   |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/4 = 7            |                                           
+                                           |                                           
+Net: VDD                                   |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/4 = 7            |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: CLK                                   |Net: CLK                                   
+  sky130_fd_pr__nfet_01v8/2 = 3            |  sky130_fd_pr__nfet_01v8/2 = 3            
+  sky130_fd_pr__pfet_01v8/2 = 3            |  sky130_fd_pr__pfet_01v8/2 = 3            
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: netlists/csrl_latch_final_xsche |Circuit 2: layout/csrl_latch_final.spice   
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__nfet_01v8:M6       |Instance: sky130_fd_pr__nfet_01v8:0        
+  (1,3) = (3,3)                            |  (1,3) = (10,3)                           
+  2 = 6                                    |  2 = 6                                    
+  4 = 7                                    |  4 = 10                                   
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__pfet_01v8:M16      |Instance: sky130_fd_pr__pfet_01v8:10       
+  (1,3) = (3,3)                            |  (1,3) = (10,3)                           
+  2 = 6                                    |  2 = 6                                    
+  4 = 7                                    |  4 = 10                                   
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Cells have no pins;  pin matching not needed.
+Device classes netlists/csrl_latch_final_xschem.spice and layout/csrl_latch_final.spice are equivalent.
+
+Final result: Netlists do not match.

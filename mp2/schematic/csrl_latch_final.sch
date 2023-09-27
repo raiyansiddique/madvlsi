@@ -161,36 +161,6 @@ N 460 -230 640 -230 {
 lab=CLK}
 N 90 -230 460 -230 {
 lab=CLK}
-C {madvlsi/nmos3.sym} 90 90 3 0 {name=M1
-L=0.15
-W=1
-body=GND
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {madvlsi/nmos3.sym} 90 -20 3 0 {name=M2
-L=0.15
-W=1
-body=GND
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
 C {madvlsi/pmos3.sym} 200 -70 0 0 {name=M7
 L=0.15
 W=1
@@ -378,3 +348,33 @@ C {devices/opin.sym} 820 -20 0 0 {name=p18 lab=Q}
 C {devices/opin.sym} 820 90 0 0 {name=p19 lab=Q_bar}
 C {devices/ipin.sym} -90 -20 0 0 {name=p1 lab=D}
 C {devices/ipin.sym} -90 90 0 0 {name=p2 lab=D_bar}
+C {madvlsi/pmos3.sym} 90 -20 3 0 {name=M1
+L=0.15
+W=1
+body=VDD
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {madvlsi/pmos3.sym} 90 90 3 0 {name=M2
+L=0.15
+W=1
+body=VDD
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
