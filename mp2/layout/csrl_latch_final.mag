@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1695790436
+timestamp 1695791791
 << nwell >>
 rect -160 330 364 1010
 << nmos >>
@@ -573,10 +573,17 @@ rect 280 -520 350 -460
 rect -145 -565 350 -520
 << labels >>
 rlabel metal1 -145 640 -145 640 7 VP
+port 2 w
 rlabel metal1 -145 160 -145 160 7 VN
+port 5 w
 rlabel metal1 -145 265 -145 265 7 CLK
+port 4 w
 rlabel poly -155 308 -155 308 7 D_bar
+port 3 w
 rlabel poly -155 498 -155 498 7 D
+port 1 w
 rlabel poly 370 497 370 497 3 Q
+port 7 e
 rlabel poly 370 308 370 308 3 Q_bar
+port 6 e
 << end >>
