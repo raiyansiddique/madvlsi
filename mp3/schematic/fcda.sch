@@ -54,7 +54,7 @@ lab=#net5}
 N 420 50 420 100 {
 lab=#net6}
 N 420 -50 420 -10 {
-lab=xxx}
+lab=Vout}
 N 110 160 110 180 {
 lab=VN}
 N 110 180 270 180 {
@@ -78,8 +78,8 @@ lab=VP}
 N 350 -260 350 -240 {
 lab=VP}
 N 420 -30 460 -30 {
-lab=xxx}
-C {madvlsi/pmos3.sym} 270 -200 0 0 {name=M1
+lab=Vout}
+C {madvlsi/pmos3.sym} 270 -200 0 0 {name=M100
 L=0.5
 W=12
 body=VDD
@@ -94,7 +94,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {madvlsi/nmos3.sym} 50 50 0 0 {name=M2
+C {madvlsi/nmos3.sym} 50 50 0 0 {name=M21
 L=0.5
 W=12
 body=GND
@@ -109,7 +109,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {madvlsi/nmos3.sym} 150 -20 0 0 {name=M3
+C {madvlsi/nmos3.sym} 150 -20 0 0 {name=M31
 L=0.5
 W=12
 body=GND
@@ -124,7 +124,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {madvlsi/nmos3.sym} 110 130 0 0 {name=M4
+C {madvlsi/nmos3.sym} 110 130 0 0 {name=M41
 L=0.5
 W=12
 body=GND
@@ -139,7 +139,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {madvlsi/pmos3.sym} 420 -200 0 0 {name=M5
+C {madvlsi/pmos3.sym} 420 -200 0 0 {name=M51
 L=0.5
 W=12
 body=VDD
@@ -154,7 +154,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {madvlsi/pmos3.sym} 420 -80 0 0 {name=M6
+C {madvlsi/pmos3.sym} 420 -80 0 0 {name=M61
 L=0.5
 W=12
 body=VDD
@@ -169,7 +169,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {madvlsi/pmos3.sym} 270 -80 0 0 {name=M7
+C {madvlsi/pmos3.sym} 270 -80 0 0 {name=M71
 L=0.5
 W=12
 body=VDD
@@ -184,7 +184,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {madvlsi/nmos3.sym} 270 20 0 0 {name=M8
+C {madvlsi/nmos3.sym} 270 20 0 0 {name=M81
 L=0.5
 W=12
 body=GND
@@ -199,7 +199,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {madvlsi/nmos3.sym} 420 130 0 0 {name=M9
+C {madvlsi/nmos3.sym} 420 130 0 0 {name=M91
 L=0.5
 W=12
 body=GND
@@ -214,7 +214,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {madvlsi/nmos3.sym} 420 20 0 0 {name=M10
+C {madvlsi/nmos3.sym} 420 20 0 0 {name=M101
 L=0.5
 W=12
 body=GND
@@ -229,7 +229,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {madvlsi/nmos3.sym} 270 130 2 0 {name=M11
+C {madvlsi/nmos3.sym} 270 130 2 0 {name=M111
 L=0.5
 W=12
 body=GND

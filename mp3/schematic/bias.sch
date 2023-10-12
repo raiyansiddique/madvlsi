@@ -12,21 +12,17 @@ lab=Vcp}
 N 290 -150 300 -150 {
 lab=Vcp}
 N 60 -250 70 -250 {
-lab=Vcp}
-N 60 -250 60 -150 {
-lab=Vcp}
+lab=Vbn}
 N 60 -150 70 -150 {
-lab=Vcp}
-N 60 -150 60 -110 {
-lab=Vcp}
+lab=Vbn}
 N 60 -110 100 -110 {
-lab=Vcp}
+lab=Vbn}
 N 100 -120 100 -110 {
-lab=Vcp}
+lab=Vbn}
 N 100 -120 100 -110 {
-lab=Vcp}
+lab=Vbn}
 N 100 -110 100 -70 {
-lab=Vcp}
+lab=Vbn}
 N 560 -220 560 -180 {
 lab=#net1}
 N 510 -200 560 -200 {
@@ -73,8 +69,6 @@ N 100 -300 560 -300 {
 lab=VP}
 N 100 -300 100 -280 {
 lab=VP}
-N 260 -300 260 -180 {
-lab=VP}
 N 740 -150 760 -150 {
 lab=Vcn}
 N 300 -150 330 -150 {
@@ -105,11 +99,7 @@ N -130 -10 -130 -0 {
 lab=VN}
 N 100 -220 100 -180 {
 lab=#net3}
-N 100 -100 260 -100 {
-lab=Vcp}
 N 260 -100 310 -100 {
-lab=Vcp}
-N 310 -150 310 -100 {
 lab=Vcp}
 N 30 -40 70 -40 {
 lab=Ib}
@@ -139,10 +129,22 @@ N -60 -40 30 -40 {
 lab=Ib}
 N 500 -270 500 -260 {
 lab=Vbp}
-N 390 -40 460 -40 {
-lab=Ib}
-N 460 -50 460 -40 {
-lab=Ib}
+N 310 -150 310 -100 {
+lab=Vcp}
+N 260 -200 260 -180 {
+lab=#net3}
+N 100 -200 260 -200 {
+lab=#net3}
+N 50 -250 60 -250 {
+lab=Vbn}
+N 50 -250 50 -150 {
+lab=Vbn}
+N 50 -150 60 -150 {
+lab=Vbn}
+N 50 -150 50 -110 {
+lab=Vbn}
+N 50 -110 60 -110 {
+lab=Vbn}
 C {madvlsi/pmos3.sym} 100 -250 0 0 {name=M1
 L=0.5
 W=12
@@ -159,8 +161,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 100 -150 0 0 {name=M2
-L=2
-W=12
+L=0.5
+W=48
 body=VDD
 nf=1
 mult=1
@@ -189,7 +191,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 100 -40 0 0 {name=M4
-L=1.5
+L=2.5
 W=12
 body=GND
 nf=1
@@ -234,7 +236,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 560 -250 0 0 {name=M7
-L=1.5
+L=2.5
 W=12
 body=VDD
 nf=1
@@ -294,8 +296,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 560 -150 0 0 {name=M11
-L=2
-W=12
+L=0.5
+W=48
 body=GND
 nf=1
 mult=1
@@ -344,4 +346,4 @@ C {devices/opin.sym} 330 -150 0 0 {name=p3 lab=Vcp}
 C {devices/opin.sym} 760 -150 0 0 {name=p7 lab=Vcn}
 C {devices/opin.sym} 500 -260 1 0 {name=p4 lab=Vbp}
 C {devices/iopin.sym} -130 -120 3 0 {name=p5 lab=Ib}
-C {devices/iopin.sym} 460 -50 0 0 {name=p2 lab=Ib}
+C {devices/opin.sym} 50 -150 2 0 {name=p2 lab=Vbn}

@@ -31,6 +31,6 @@ B 5 67.5 -42.5 72.5 -37.5 {name=Vcn
 dir=out}
 B 5 67.5 -22.5 72.5 -17.5 {name=Vbp
 dir=out}
-B 5 67.5 -2.5 72.5 2.5 {name=Ib
-dir=inout}
+B 5 67.5 -2.5 72.5 2.5 {name=Vbn
+dir=out}
 T {@name} 100 -50 0 0 0.2 0.2 {}
