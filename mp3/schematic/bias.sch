@@ -12,25 +12,25 @@ lab=Vcp}
 N 290 -150 300 -150 {
 lab=Vcp}
 N 60 -250 70 -250 {
-lab=Vbn}
+lab=#net1}
 N 60 -150 70 -150 {
-lab=Vbn}
+lab=#net1}
 N 60 -110 100 -110 {
-lab=Vbn}
+lab=#net1}
 N 100 -120 100 -110 {
-lab=Vbn}
+lab=#net1}
 N 100 -120 100 -110 {
-lab=Vbn}
+lab=#net1}
 N 100 -110 100 -70 {
-lab=Vbn}
+lab=#net1}
 N 560 -220 560 -180 {
-lab=#net1}
+lab=Vbn}
 N 510 -200 560 -200 {
-lab=#net1}
+lab=Vbn}
 N 510 -200 510 -150 {
-lab=#net1}
+lab=Vbn}
 N 510 -150 530 -150 {
-lab=#net1}
+lab=Vbn}
 N 560 -120 560 -70 {
 lab=#net2}
 N 560 -100 700 -100 {
@@ -46,9 +46,9 @@ lab=VP}
 N 560 -300 700 -300 {
 lab=VP}
 N 510 -150 510 -40 {
-lab=#net1}
+lab=Vbn}
 N 510 -40 530 -40 {
-lab=#net1}
+lab=Vbn}
 N 730 -150 740 -150 {
 lab=Vcn}
 N 740 -190 740 -150 {
@@ -56,7 +56,7 @@ lab=Vcn}
 N 700 -190 740 -190 {
 lab=Vcn}
 N 530 -250 670 -250 {
-lab=Vbp}
+lab=#net3}
 N -100 -40 -60 -40 {
 lab=Ib}
 N -130 -120 -130 -70 {
@@ -98,7 +98,7 @@ lab=VN}
 N -130 -10 -130 -0 {
 lab=VN}
 N 100 -220 100 -180 {
-lab=#net3}
+lab=#net4}
 N 260 -100 310 -100 {
 lab=Vcp}
 N 30 -40 70 -40 {
@@ -106,45 +106,46 @@ lab=Ib}
 N 70 -40 230 -40 {
 lab=Ib}
 N 420 -80 420 -70 {
-lab=#net4}
+lab=#net3}
 N 420 -170 420 -80 {
-lab=#net4}
+lab=#net3}
 N 420 -210 420 -170 {
-lab=#net4}
+lab=#net3}
 N 390 -200 420 -200 {
-lab=#net4}
-N 420 -270 520 -270 {
-lab=Vbp}
-N 520 -270 520 -250 {
-lab=Vbp}
+lab=#net3}
 N 520 -250 530 -250 {
-lab=Vbp}
+lab=#net3}
 N 370 -200 390 -200 {
-lab=#net4}
+lab=#net3}
 N 370 -240 370 -200 {
-lab=#net4}
+lab=#net3}
 N 370 -240 390 -240 {
-lab=#net4}
+lab=#net3}
 N -60 -40 30 -40 {
 lab=Ib}
-N 500 -270 500 -260 {
-lab=Vbp}
 N 310 -150 310 -100 {
 lab=Vcp}
 N 260 -200 260 -180 {
-lab=#net3}
+lab=#net4}
 N 100 -200 260 -200 {
-lab=#net3}
+lab=#net4}
 N 50 -250 60 -250 {
-lab=Vbn}
+lab=#net1}
 N 50 -250 50 -150 {
-lab=Vbn}
+lab=#net1}
 N 50 -150 60 -150 {
-lab=Vbn}
+lab=#net1}
 N 50 -150 50 -110 {
-lab=Vbn}
+lab=#net1}
 N 50 -110 60 -110 {
-lab=Vbn}
+lab=#net1}
+N 410 -250 520 -250 {
+lab=#net3}
+N 410 -250 410 -240 {
+lab=#net3}
+N 390 -240 410 -240 {
+lab=#net3}
+N 420 -300 420 -270 {}
 C {madvlsi/pmos3.sym} 100 -250 0 0 {name=M1
 L=0.5
 W=12
@@ -165,7 +166,7 @@ L=0.5
 W=12
 body=VDD
 nf=1
-mult=4
+mult=5
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -195,7 +196,7 @@ L=0.5
 W=12
 body=GND
 nf=1
-mult=1/6
+mult=1/5
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -240,7 +241,7 @@ L=0.5
 W=12
 body=VDD
 nf=1
-mult=1/6
+mult=1/5
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -300,7 +301,7 @@ L=0.5
 W=12
 body=GND
 nf=1
-mult=4
+mult=5
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -344,6 +345,6 @@ C {devices/iopin.sym} 370 -320 3 0 {name=p1 lab=VP}
 C {devices/iopin.sym} 200 0 1 0 {name=p6 lab=VN}
 C {devices/opin.sym} 330 -150 0 0 {name=p3 lab=Vcp}
 C {devices/opin.sym} 760 -150 0 0 {name=p7 lab=Vcn}
-C {devices/opin.sym} 500 -260 1 0 {name=p4 lab=Vbp}
+C {devices/opin.sym} 500 -250 1 0 {name=p4 lab=Vbp}
 C {devices/iopin.sym} -130 -120 3 0 {name=p5 lab=Ib}
 C {devices/opin.sym} 510 -150 2 0 {name=p2 lab=Vbn}

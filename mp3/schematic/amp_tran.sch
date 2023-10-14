@@ -12,7 +12,7 @@ lab=Vcn}
 N 370 -80 440 -80 {
 lab=Vbp}
 N 370 -60 440 -60 {
-lab=Vbp}
+lab=Vbn}
 N 480 0 480 10 {
 lab=GND}
 N 340 10 480 10 {
@@ -46,7 +46,7 @@ lab=Vcn}
 N 380 -80 380 20 {
 lab=Vbp}
 N 430 -60 430 40 {
-lab=Vbp}
+lab=Vbn}
 C {madvlsi/vsource.sym} -50 -100 0 0 {name=Vdd1
 value=1.4}
 C {madvlsi/vsource.sym} 10 -100 0 0 {name=Vdd2
@@ -63,17 +63,15 @@ C {madvlsi/vsource.sym} 70 -150 0 0 {name=Vdd
 value=1.8}
 C {madvlsi/gnd.sym} 70 -120 0 0 {name=l6 lab=GND}
 C {madvlsi/vdd.sym} 70 -180 0 0 {name=l7 lab=VDD}
-C {madvlsi/tt_models.sym} 150 -170 0 0 {
+C {madvlsi/tt_models.sym} 30 -10 0 0 {
 name=TT_MODELS
 only_toplevel=false
 value=".option wnflag=1
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {devices/code_shown.sym} 240 60 0 0 {name=SPICE only_toplevel=false value="
+C {devices/code_shown.sym} -320 20 0 0 {name=SPICE only_toplevel=false value="
 .dc Vdd1 0 1.8 0.01 Vdd2 0.25 1.5 0.25
 .save all"}
-C {/home/madvlsi/madvlsi/mp3/schematic/fcda.sym} 420 -50 0 0 {}
-C {/home/madvlsi/madvlsi/mp3/schematic/bias.sym} 300 -60 0 0 {}
 C {devices/lab_pin.sym} 290 -120 0 0 {name=p11 sig_type=std_logic lab=Ib}
 C {devices/lab_pin.sym} 420 -40 0 0 {name=p9 sig_type=std_logic lab=V1}
 C {devices/lab_pin.sym} 420 -20 0 0 {name=p10 sig_type=std_logic lab=V2}
@@ -88,3 +86,5 @@ C {devices/lab_pin.sym} 390 -180 1 0 {name=p4 sig_type=std_logic lab=Vcp}
 C {devices/lab_pin.sym} 440 -180 1 0 {name=p5 sig_type=std_logic lab=Vcn}
 C {devices/lab_pin.sym} 380 20 3 0 {name=p6 sig_type=std_logic lab=Vbp}
 C {devices/lab_pin.sym} 430 40 3 0 {name=p7 sig_type=std_logic lab=Vbn}
+C {/home/madvlsi/madvlsi/mp3/schematic/fcda.sym} 420 -50 0 0 {name=X2}
+C {/home/madvlsi/madvlsi/mp3/schematic/bias.sym} 300 -60 0 0 {name=X1}
