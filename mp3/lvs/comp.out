@@ -1,0 +1,96 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Class amp_schem.spice (0):  Merged 22 parallel devices.
+Class amp.spice (1):  Merged 22 parallel devices.
+Subcircuit summary:
+Circuit 1: amp_schem.spice                 |Circuit 2: amp.spice                       
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (10->6)            |sky130_fd_pr__pfet_01v8 (10->6)            
+sky130_fd_pr__nfet_01v8 (30->12)           |sky130_fd_pr__nfet_01v8 (30->12)           
+Number of devices: 18                      |Number of devices: 18                      
+Number of nets: 17                         |Number of nets: 17                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__nfet_01v8:M921 vs. sky130_fd_pr__nfet_01v8:13:
+ W circuit1: 12   circuit2: 18   (delta=40%, cutoff=1%)
+Circuit 1 parallel/series network does not match Circuit 2
+Circuit 1 instance sky130_fd_pr__nfet_01v8:M921 network:
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 12
+  L = 0.5
+Circuit 2 instance sky130_fd_pr__nfet_01v8:13 network:
+  l = 0.5
+  w = 18
+  ps = 6.5
+  as = 1.5
+  pd = 6.5
+  ad = 1.5
+  M = 1
+  l = 0.6
+  w = 6
+  ps = 6.5
+  as = 1.5
+  pd = 6.5
+  ad = 1.5
+sky130_fd_pr__nfet_01v8:M917 vs. sky130_fd_pr__nfet_01v8:9:
+ W circuit1: 12   circuit2: 18   (delta=40%, cutoff=1%)
+Circuit 1 parallel/series network does not match Circuit 2
+Circuit 1 instance sky130_fd_pr__nfet_01v8:M917 network:
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 12
+  L = 0.5
+Circuit 2 instance sky130_fd_pr__nfet_01v8:9 network:
+  l = 0.5
+  w = 18
+  ps = 6.5
+  as = 1.5
+  pd = 6.5
+  ad = 1.5
+  M = 1
+  l = 0.7
+  w = 6
+  ps = 6.5
+  as = 1.5
+  pd = 6.5
+  ad = 1.5
+sky130_fd_pr__nfet_01v8:M3 vs. sky130_fd_pr__nfet_01v8:25:
+ W circuit1: 3   circuit2: 6   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__nfet_01v8:M1 vs. sky130_fd_pr__nfet_01v8:10:
+ W circuit1: 9   circuit2: 12   (delta=28.6%, cutoff=1%)
+Cells have no pins;  pin matching not needed.
+Device classes amp_schem.spice and amp.spice are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ amp_schem.spice
