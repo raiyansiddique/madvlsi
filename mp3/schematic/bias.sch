@@ -56,7 +56,7 @@ lab=Vcn}
 N 700 -190 740 -190 {
 lab=Vcn}
 N 530 -250 670 -250 {
-lab=#net3}
+lab=Vbp}
 N -100 -40 -60 -40 {
 lab=Ib}
 N -130 -120 -130 -70 {
@@ -98,7 +98,7 @@ lab=VN}
 N -130 -10 -130 -0 {
 lab=VN}
 N 100 -220 100 -180 {
-lab=#net4}
+lab=#net3}
 N 260 -100 310 -100 {
 lab=Vcp}
 N 30 -40 70 -40 {
@@ -106,29 +106,29 @@ lab=Ib}
 N 70 -40 230 -40 {
 lab=Ib}
 N 420 -80 420 -70 {
-lab=#net3}
+lab=Vbp}
 N 420 -170 420 -80 {
-lab=#net3}
+lab=Vbp}
 N 420 -210 420 -170 {
-lab=#net3}
+lab=Vbp}
 N 390 -200 420 -200 {
-lab=#net3}
+lab=Vbp}
 N 520 -250 530 -250 {
-lab=#net3}
+lab=Vbp}
 N 370 -200 390 -200 {
-lab=#net3}
+lab=Vbp}
 N 370 -240 370 -200 {
-lab=#net3}
+lab=Vbp}
 N 370 -240 390 -240 {
-lab=#net3}
+lab=Vbp}
 N -60 -40 30 -40 {
 lab=Ib}
 N 310 -150 310 -100 {
 lab=Vcp}
 N 260 -200 260 -180 {
-lab=#net4}
+lab=#net3}
 N 100 -200 260 -200 {
-lab=#net4}
+lab=#net3}
 N 50 -250 60 -250 {
 lab=#net1}
 N 50 -250 50 -150 {
@@ -140,12 +140,13 @@ lab=#net1}
 N 50 -110 60 -110 {
 lab=#net1}
 N 410 -250 520 -250 {
-lab=#net3}
+lab=Vbp}
 N 410 -250 410 -240 {
-lab=#net3}
+lab=Vbp}
 N 390 -240 410 -240 {
-lab=#net3}
-N 420 -300 420 -270 {}
+lab=Vbp}
+N 420 -300 420 -270 {
+lab=VP}
 C {madvlsi/pmos3.sym} 100 -250 0 0 {name=M1
 L=0.5
 W=12
@@ -166,7 +167,7 @@ L=0.5
 W=12
 body=VDD
 nf=1
-mult=5
+mult=4
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -196,7 +197,7 @@ L=0.5
 W=12
 body=GND
 nf=1
-mult=1/5
+mult=1/6
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -241,7 +242,7 @@ L=0.5
 W=12
 body=VDD
 nf=1
-mult=1/5
+mult=1/6
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -301,7 +302,7 @@ L=0.5
 W=12
 body=GND
 nf=1
-mult=5
+mult=4
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
