@@ -427,10 +427,14 @@ N 720 540 740 540 {
 lab=VN}
 N 740 510 740 540 {
 lab=VN}
-N 730 590 730 630 {}
-N 720 590 730 590 {}
-N 760 620 760 660 {}
-N 730 620 760 620 {}
+N 730 590 730 630 {
+lab=VN}
+N 720 590 730 590 {
+lab=VN}
+N 760 620 760 660 {
+lab=VN}
+N 730 620 760 620 {
+lab=VN}
 C {madvlsi/pmos3.sym} 140 250 3 0 {name=M95
 L=0.5
 W=6
@@ -552,8 +556,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 220 380 1 0 {name=M917
-L=0.5
-W=3
+L=0.7
+W=6
 body=GND
 nf=1
 mult=1
@@ -568,7 +572,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 300 380 1 0 {name=M918
 L=0.5
-W=3
+W=6
 body=GND
 nf=1
 mult=1
@@ -583,7 +587,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 60 380 1 0 {name=M919
 L=0.5
-W=3
+W=6
 body=GND
 nf=1
 mult=1
@@ -598,7 +602,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 140 380 1 0 {name=M920
 L=0.5
-W=3
+W=6
 body=GND
 nf=1
 mult=1
@@ -612,8 +616,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 550 380 1 0 {name=M921
-L=0.5
-W=3
+L=0.6
+W=6
 body=GND
 nf=1
 mult=1
@@ -628,7 +632,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 630 380 1 0 {name=M922
 L=0.5
-W=3
+W=6
 body=GND
 nf=1
 mult=1
@@ -643,7 +647,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 390 380 1 0 {name=M923
 L=0.5
-W=3
+W=6
 body=GND
 nf=1
 mult=1
@@ -658,7 +662,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 470 380 1 0 {name=M94
 L=0.5
-W=3
+W=6
 body=GND
 nf=1
 mult=1
@@ -952,7 +956,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -10 380 3 0 {name=M3
 L=0.5
-W=3
+W=6
 body=GND
 nf=1
 mult=1
@@ -997,7 +1001,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 710 380 3 0 {name=M6
 L=0.5
-W=3
+W=6
 body=GND
 nf=1
 mult=1
@@ -1012,7 +1016,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 710 510 3 0 {name=M7
 L=0.5
-W=3
+W=6
 body=GND
 nf=1
 mult=1
